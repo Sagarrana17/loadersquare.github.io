@@ -1,0 +1,126 @@
+@keyframes enter {
+  0% {
+    opacity: 0;
+    top: -10px;
+  }
+  5% {
+    opacity: 1;
+    top: 0px;
+  }
+  50.9% {
+    opacity: 1;
+    top: 0px;
+  }
+  55.9% {
+    opacity: 0;
+    top: 10px;
+  }
+}
+@-webkit-keyframes enter {
+  0% {
+    opacity: 0;
+    top: -10px;
+  }
+  5% {
+    opacity: 1;
+    top: 0px;
+  }
+  50.9% {
+    opacity: 1;
+    top: 0px;
+  }
+  55.9% {
+    opacity: 0;
+    top: 10px;
+  }
+}
+
+
+/* Body Colour Change */
+body {
+  background: #323738;
+}
+/* Body Colour */
+* {
+  margin: 0;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -27.5px;
+  margin-top: -27.5px;
+}
+
+.square {
+  /* Square Colour Change */
+  background: rgb(226, 198, 40);
+  /* Square Colour */
+  width: 12px;
+  height: 12px;
+  margin-right: 5px;
+  margin-top: 5px;
+  float: left;
+  top: -10px;
+  position: relative;
+  opacity: 0;
+  -webkit-animation: enter 7s infinite;
+  animation: enter 7s infinite;
+}
+
+.enter {
+  top: 0px;
+  opacity: 1;
+}
+
+.square:nth-child(1) {
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.square:nth-child(2) {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+.square:nth-child(3) {
+  -webkit-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+  /* One Box Color Change */
+  background: #ffffff;
+   /* One Box Color */
+}
+
+.square:nth-child(4) {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+.square:nth-child(5) {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+
+.square:nth-child(6) {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.square:nth-child(8) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.square:nth-child(9) {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.clear {
+  clear: both;
+}
+
+.last {
+  margin-right: 0;
+}
